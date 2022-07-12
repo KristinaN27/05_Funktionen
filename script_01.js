@@ -45,3 +45,23 @@ ausgabeNamenParams(prompt("Vorname?"),prompt("Nachname?"));
 function ausgabeNamenParams(firstName, familyName) { // Parameter
     console.log("Hallo " + firstName + " " + familyName + "!");
 }
+
+// /***** Funktion 03a /*******
+// 03a. Vorbereitung
+//  Postulat: one function = one job (uncle job)
+//  SRP single responsibility principle
+
+ausgabeNamenParams2("Max","Mütze");
+
+ function ausgabeNamenParams2(firstName, familyName) {  //Parameter
+
+// 1. Funktionalität: string composing
+
+const gap = " ";
+const outputStr = "Hallo"+ gap + firstName + gap + familyName + "!"
+
+// 2. Funktionalität: data output
+console.log(outputStr);
+
+
+ }
