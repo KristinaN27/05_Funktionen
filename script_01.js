@@ -35,3 +35,13 @@ ausgabeNamenParam("Fatih");
 function ausgabeNamenParam(firstName) { // Parameter
     console.log("Hallo " + firstName + "!");
 }
+
+/***** Funktionen 02c *****/
+// 2c. Mehrer Parameter *****/
+
+ausgabeNamenParams("Maxine","Mütze");
+ausgabeNamenParams(prompt("Vorname?"),prompt("Nachname?"));
+
+function ausgabeNamenParams(firstName, familyName) { // Parameter
+    console.log("Hallo " + firstName + " " + familyName + "!");
+}
