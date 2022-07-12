@@ -65,3 +65,24 @@ console.log(outputStr);
 
 
  }
+
+
+ /**** Funktion 03b  *******/
+ // Trennen der Funktionalität | return
+
+ // 1. Funktionalität: string composing
+
+getString("Maxine","Mütze");
+output(getString("Maxine","Mütze"));
+function getString(firstName, familyName) {
+    const gap = " ";
+    const outputStr = "Hallo"+ gap + firstName + gap + familyName + "!";
+    return outputStr;  //----> Daten zum Call
+    console.log("Hi");  // return BEENDET die Funkltion!
+ }
+
+// 2. Funktionalität: data output
+// output("Hello");
+function output(outputData) {
+    console.log(outputData);
+}
